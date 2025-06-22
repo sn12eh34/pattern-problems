@@ -1,0 +1,42 @@
+/*Problem Statement: Given an integer N, print the following pattern : 
+
+
+Here, N = 5.
+
+Examples:
+
+Input Format: N = 3
+Result: 
+***
+* *
+***
+
+Input Format: N = 6
+Result:   
+******
+*    *
+*    *
+*    *
+*    *
+******              */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+
+	for (int i = 1; i <= n; i++) {
+	    for (int j = 1; j <= n; j++) {
+	        if (i == 1 || i == n || j == 1 || j == n) {
+	            cout << "*";
+	        } else {
+	            cout << " ";
+	        }
+	    }
+	    cout << "\n";
+	}
+
+	return 0;
+}
